@@ -58,7 +58,7 @@ public class C04_Assertions {
          Expected :https:// www.facebook.com
          Actual   :https://www.amazon.com/
          <Click to see difference>
- boylece hatanin ne oldugunu arastirmamiza gerek kalmadan JUnit bize raporlamis olacak
+         boylece hatanin ne oldugunu arastirmamiza gerek kalmadan JUnit bize raporlamis olacak
 
 
          */
