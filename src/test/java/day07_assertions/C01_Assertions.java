@@ -29,6 +29,7 @@ public class C01_Assertions {
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     driver.get("https://www.amazon.com");
 
+
 }
 @AfterClass
     public static void tearDown(){
@@ -43,6 +44,7 @@ public void test01() {
     String actualUrl=driver.getCurrentUrl();
     Assert.assertTrue(actualUrl.contains(arananKelime));
 
+
 }
 @Test
     public void test02(){
@@ -55,6 +57,8 @@ public void test01() {
 @Test
     public void test03(){
     // 3- sol ust kosede amazon logosunun gorundugunu test edin
+    WebElement logoElementi=driver.findElement(By.xpath("//a[@class='nav-logo-link nav-progressive-attribute']"));
+    Assert.assertTrue(logoElementi.isDisplayed());
     //WebElement logoElementi= driver.findElement(By.id("nav-logo-sprites"));
     //Assert.assertTrue(logoElementi.isDisplayed());
 
