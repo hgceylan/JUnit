@@ -18,6 +18,7 @@ public class C02_BestBuyAssertions {
     //      ○ titleTest => Sayfa başlığının “Rest” içermediğini(contains) test edin
     //      ○ logoTest => BestBuy logosunun görüntülendigini test edin
     //      ○ FrancaisLinkTest => Fransizca Linkin görüntülendiğini test edin
+
     static WebDriver driver;
     @BeforeClass
     public static void setUp(){

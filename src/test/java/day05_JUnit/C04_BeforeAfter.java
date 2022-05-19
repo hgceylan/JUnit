@@ -20,17 +20,17 @@ public class C04_BeforeAfter {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
-    @After
-    public void tearDown() {
-        driver.close();
-    }
+   // @After
+    //public void tearDown() {
+        //driver.close();
+   // }
 
     @Test
     public void test01() {
         driver.get("https://www.amazon.com");
     }
 
-    @Test
+    /*@Test
     public void test02() {
         driver.get("https://www.techproeducation.com");
     }
@@ -39,4 +39,6 @@ public class C04_BeforeAfter {
     public void test03() {
         driver.get("https://www.facebook.com");
     }
+
+     */
 }
