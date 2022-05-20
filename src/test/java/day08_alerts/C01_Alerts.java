@@ -49,6 +49,10 @@ public class C01_Alerts {
         //alert'te OK tusuna basin
          driver.switchTo().alert().accept();
 
+         //ok-> accept
+        // dismis->cancel
+        // sendKeys-> veya getText alert teki yaziyi almak icin
+
          //result kisminda "You successfully clicked an alert" yazdigini test edin
         String expectedResult="You successfully clicked an alert";
         WebElement sonucYaziElementi=driver.findElement(By.xpath("//p[@id='result']"));

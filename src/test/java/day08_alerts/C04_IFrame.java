@@ -66,7 +66,9 @@ public class C04_IFrame {
         // cunku yukarida iFrame' e gecis yapmistik
         // once oradan cikmamiz lazim
 
-        driver.switchTo().defaultContent();
+        driver.switchTo().defaultContent();  //iFrame den cikmak icin
+        //defaultCotent-> anasayfaya cikar
+        // parentFrame-> bir ust frame cikar( ici ice iframe olan sayfalarda kullanilabilir )
 
         WebElement linkYaziElementi=driver.findElement(By.linkText("Elemental Selenium"));
         Assert.assertTrue(linkYaziElementi.isDisplayed());
