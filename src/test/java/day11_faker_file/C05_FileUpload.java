@@ -39,5 +39,6 @@ public class C05_FileUpload extends TestBase {
         WebElement yaziElementi= driver.findElement(By.tagName("h3"));
         Assert.assertTrue(yaziElementi.isDisplayed());
         Thread.sleep(5000);
+        
     }
 }
