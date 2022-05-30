@@ -22,11 +22,26 @@ public class C03_IstenenWebElementSS extends TestBase {
         WebElement aramaKutusu=driver.findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
 
+        // webElementi locate edelim
         WebElement sonucYaziElementi= driver.findElement(By.xpath("//h1[@class='a-size-base s-desktop-toolbar a-text-normal']"));
+
+        //kaydettigimiz ekran goruntusunu projede istedigimiz yere
+        // kaydebilmek icin path ile yeni bir file olusturalim
         File sonucYaziElementSS=new File("target/ekranGoruntuleri/sonucYazisiSS.jpeg");
+
+        //webElement uzerinden getScreenshotAs() methodunu calistiralim
+        // ve gelen resmi olusturdugumuz gecici file'e assing edelim
         File temp=sonucYaziElementi.getScreenshotAs(OutputType.FILE);
 
-        FileUtils.copyFile(temp,sonucYaziElementSS);
+        // gecici resmi saklamak istedigimiz dosyaya kopyalayalim
+        FileUtils.copyFile(temp,sonucYaziElementSS); // temp dosyasini asil dosyaya kopyaliyor
+
+
+
+
+
+
+
 
     }
 }
